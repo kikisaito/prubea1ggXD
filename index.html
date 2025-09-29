@@ -1,44 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script type="module" src="./main.js"></script>
-</head>
+    <title>Musiciza | Dashboard Principal</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
 <body>
-    <div class="container">
-        <div class="music-player">
-            <nav>
-                <div class="circle">
-                    <span>back</span>
+
+    <div class="app-layout">
+        
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <span class="logo">Musiciza</span>
+            </div>
+            
+            <nav class="main-menu">
+                <div class="menu-section">
+                    <h3>Untitled</h3>
+                    <ul>
+                        <li><a href="#" class="team-project">Team project</a></li>
+                    </ul>
                 </div>
-                <div class="circle">
-                    <span>bars</span>
+                
+                <div class="menu-section">
+                    <h3>Páginas</h3>
+                    <ul>
+                        <li class="active"><a href="#">Page 1</a></li>
+                    </ul>
+                    <p class="free-pages-note">Quedan 2 páginas gratuitas. Ver planes que ofrecen más</p>
+                </div>
+
+                <div class="menu-section">
+                    <h3>Capas</h3>
+                    <ul>
+                        <li><a href="#">Macbook Pro 14" - 1</a></li>
+                    </ul>
                 </div>
             </nav>
+        </aside>
+        
+        <main class="dashboard-content">
 
-            <div id="song-details">
-                <img src="./media/default_img.jpg" alt="" id="song-img">
-                <h1 id="title"></h1>
-                <h3 id="artist"></h3>
-            </div>
+            <header class="top-header">
+                <nav class="horizontal-nav">
+                    <ul>
+                        <li><a href="#">Música</a></li>
+                        <li><a href="#">Descubrir</a></li>
+                        <li><a href="#">Tendencias</a></li>
+                        <li><a href="#">Mis Álbumes</a></li>
+                        <li><a href="#">Configuración</a></li>
+                    </ul>
+                </nav>
+                <div class="user-area">
+                    <button class="btn-search">Buscar</button>
+                    <a href="#" class="user-icon">
+                        <img src="/media/1_deftones.jpg" alt="Foto de perfil">
+                    </a> 
+                </div>
+            </header>
 
-            <div class="audio">
-                <audio controls id="media" hidden>
-                    <!--<source id="audio" src="" type="audio/mpeg">-->
-                </audio>
-                <input type="range" value="0" id="progress">
-            </div>
+            <section class="music-hits-hero">
+                
+                <div class="recent-albums-grid">
+                    <article class="album-card">
+                        <img src="/media/2_deftones.jpg" alt="Álbum reciente 1">
+                    </article>
+                    <article class="album-card">
+                        <img src="/media/3deftones.jpg" alt="Álbum reciente 2">
+                    </article>
+                    <article class="album-card">
+                        <img src="/media/deftones4.jpg" alt="Álbum reciente 3">
+                    </article>
+                    <article class="album-card">
+                        <img src="/media/deftones5.jpg" alt="Álbum reciente 4">
+                    </article>
+                </div>
+                
+                <article class="music-hits-detail">
+                    <h2>Music Hits</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec metus non nisi malesuada.</p>
+                    <div class="actions">
+                        <button class="btn-play">Play</button>
+                        <button class="btn-follow">Seguir</button>
+                    </div>
+                    <div class="mini-player-bar">
+                        </div>
+                </article>
 
-            <div class="song-controls">
-                <span id="lastest">last</span>
-                <span id="play" class="play">play</span>
-                <span id="forward">forward</span>
-            </div>
+            </section>
+            
+            <section class="bottom-content-grid">
+                
+                <div class="my-playlist-column">
+                    <h2>My Playlist</h2>
+                    <ul class="playlist-list">
+                        <li class="playlist-item">
+                            <img src="/media/sturday_pinterest.jpg" alt="Playlist canción 1">
+                        </li>
+                        <li class="playlist-item">
+                            <img src="/media/deftones8.jpg" alt="Playlist canción 2">
+                        </li>
+                        <li class="playlist-item">
+                            <img src="/media/Deftones_Covers.jpg" alt="Playlist canción 3">
+                        </li>
+                        <li class="playlist-item">
+                            <img src="/media/deftones_integrantes_pinteres.jpg" alt="Playlist canción 4">
+                        </li>
+                        <li class="playlist-item">
+                            <img src="/media/deftones_Serpiente_Provate_Music.jpg" alt="Playlist canción 5">
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="trending-videos-column">
+                    <h2>Trending Videos</h2>
+                    <div class="video-grid">
+                        <article class="video-card">
+                            <img src="/media/private_music.jpg" alt="Video en tendencia 1">
+                        </article>
+                        <article class="video-card">
+                            <img src="/media/onierto.jpg" alt="Video en tendencia 2">
+                        </article>
+                    </div>
+                </div>
+                
+                <div class="charts-tags-column">
+                    
+                    <section class="top-charts">
+                        <h2>Top 10 This Week</h2>
+                        <article class="chart-item-highlight">
+                            <img src="ruta/a/chart_destacado.jpg" alt="Top Chart Destacado">
+                        </article>
+                        <div class="chart-items-list">
+                            <article class="chart-item">
+                                <img src="ruta/a/chart_item_2.jpg" alt="Segundo item del chart">
+                            </article>
+                            <article class="chart-item"></article>
+                        </div>
+                    </section>
+                    
+                    <section class="top-tags">
+                        <h2>Top Tags</h2>
+                        <div class="tags-container">
+                            <span class="tag">#Pop</span>
+                            <span class="tag">#Rock</span>
+                            <span class="tag">#Jazz</span>
+                        </div>
+                    </section>
+                </div>
 
-        </div>
+            </section>
+
+        </main>
+        
     </div>
+
 </body>
 </html>
